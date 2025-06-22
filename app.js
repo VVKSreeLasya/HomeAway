@@ -95,9 +95,14 @@ app.use((req,res,next)=>{
     next();
 });
 
-app.get("/",(req,res)=>{
-    res.send("Hi,i am root");
+app.get('/', (req, res) => {
+  res.redirect('/listings');
 });
+
+
+// app.get("/",(req,res)=>{
+//     res.send("Hi,i am root");
+// });
 
 // app.get("/demouser",async(req,res)=>{
 //     let fakeUser=new User({
